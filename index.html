@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVENTOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="btn">Exercicio 1</button>
+        <button class="btn">Exercicio 2</button>
+        <button class="btn">Exercicio 3</button>
+        <button class="btn">Exercicio 4</button>
+    </header>
+    <section>
+        <iframe src="" frameborder="0" id="frame"></iframe>
+    </section>
+    <script>
+
+        var botao1 = document.querySelectorAll(".btn")[0];
+        botao1.onclick = function(){ abrir1() };
+        function abrir1(){
+            document.getElementById("frame").src = "exe1.html"
+        }
+
+        var botao2 = document.querySelectorAll(".btn")[1];
+        botao2.onclick = function(){ abrir2() };
+        function abrir2(){
+            document.getElementById("frame").src = "exe2.html"
+        }
+
+        var botao3 = document.querySelectorAll(".btn")[2];
+        botao3.onclick = function(){ abrir3() };
+        function abrir3(){
+            document.getElementById("frame").src = "exe3.html"
+        }
+
+        var botao4 = document.querySelectorAll(".btn")[3];
+        botao4.onclick = function(){ abrir4() };
+        function abrir4(){
+            document.getElementById("frame").src = "exe4.html"
+        }
+
+
+
+    </script>
+</body>
+</html>
